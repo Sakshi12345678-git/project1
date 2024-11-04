@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Yes it available</h1>
+    <p>please close here.</p>
+    <button onclick="ClosePopup()">close</button>
+    <script>
+        function ClosePopup(){
+            if (window.opener && window.opener.closed){
+                 window.close();
+            } else{
+                 alert(" please close it manually. ");
+            }
+        }
+    </script>
+    
+</body>
+</html>
